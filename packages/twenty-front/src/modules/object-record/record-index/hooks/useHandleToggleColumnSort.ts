@@ -60,11 +60,7 @@ export const useHandleToggleColumnSort = ({
       // ordered by that column alone; multi-column sorts stay in the Sort menu
       store.set(currentRecordSortsCallbackState, [newSort]);
     },
-    [
-      columnDefinitions,
-      currentRecordSortsCallbackState,
-      store,
-    ],
+    [columnDefinitions, currentRecordSortsCallbackState, store],
   );
 
   return handleToggleColumnSort;
